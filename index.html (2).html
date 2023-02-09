@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+<section class="header">
+	<nav>
+		<a href="index.html"><img src="images/logo.jpg"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times"onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="faqja1.html">HOME</a></li>
+				<li><a href="faqja2.html">ABOUT</a></li>
+
+			</ul>
+		</div>
+		<i class="fa fa-bars"onclick="showMenu()"></i>
+	</nav>
+
+<div class="text-box">
+	<h1>Pjekja dhe përgatitja e kafesë</h1>
+	<p>Kokrrat e përzgjedhura të kafes <br>  dhe procesi i veqantë i pjekjes e bëjn kafen tonë te jetë me shije dhe arome unike.
+	</p>
+	
+	
+</div>
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+	
+	var navLinks = document.getElementBy("navLinks")
+    function showMenu() {
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px"
+	}
+
+</script>
+<!-------About------->
+<section id="about">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h2>Më shumë</h2>
+			Për ne, përgatitja e kafesë nuk është vetëm që t’a pish dhe ta shijosh.
+			Padyshim se derisa e merr në dorë një filxhan kafe, shkon një proces i gjatë.
+
+30 kilogram kafe piqen për rreth 1 orë, ndërsa bluarja bëhet në mullinjet e teknologjis se fundit, dhe për rreth 5 minuta bluhet një kilogram
+		</div>
+		<div class="col-md-6"></div>
+	</div>
+	</div>
+</body>
+</html>
